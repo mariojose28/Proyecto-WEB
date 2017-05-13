@@ -1,0 +1,68 @@
+*{margin: 0; padding: o;}
+
+header div .logo {
+	width: 200px;
+	height: 200px;
+}
+
+header {
+	width: 100%;
+	overflow: hidden;
+	background: #E6E6FA;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+header .logo {
+	float: left;
+}
+
+header .menu {
+	float: right;
+	line-height: 200px;
+}
+
+header .menu a {
+	display: inline-block;
+	color: #6759BD;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	font-size: 20px;
+	font
+	-weight: bold;
+	-webkit-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
+}
+
+header .menu a:hover {
+	background: #f56f3a;
+	border-radius: 30px;
+}
+
+.header2 {
+	position: fixed;
+	height: 100px;
+}
+
+.header2 .menu {
+	line-height: 100px;
+}
+
+@media screen and (max-width: 950px) {
+	header div .logo,
+	header .menu {
+		width: 100%;
+		text-align: center;
+		line-height: 100px;
+	}
+
+
+}
