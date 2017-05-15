@@ -19,6 +19,13 @@ header {
 	overflow: hidden;
 }
 
+.wrapper2 {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
 header .logo {
 	float: left;
 }
@@ -47,22 +54,43 @@ header .menu a:hover {
 	border-radius: 30px;
 }
 
-.header2 {
-	position: fixed;
-	height: 100px;
+footer section {
+	width: 23%;
+	float: left;
+	padding: 2%;
 }
 
-.header2 .menu {
-	line-height: 100px;
+footer .wrapper2 .contacto {
+	text-align: justify;
+	line-height: 150%;
+}
+
+footer .wrapper2 .contacto p {
+	font-size: 13px;
+}
+
+footer .wrapper2 > section {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Kaushan Script', cursive;
+	color: #8c8c8c;
+}
+
+footer .wrapper2 .LogoZapato {
+	float: left;
 }
 
 @media screen and (max-width: 950px) {
-	header div .logo,
 	header .menu {
 		width: 100%;
 		text-align: center;
 		line-height: 100px;
 	}
 
+	header div .logo {
+		width: auto;
+		margin-left: 35%;
+		margin-right: 35%;
+	}
 
 }
