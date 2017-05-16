@@ -55,9 +55,10 @@ header .menu a:hover {
 }
 
 footer section {
-	width: 23%;
+	width: 25%;
 	float: left;
-	padding: 2%;
+	padding: 0%;
+	margin: auto;
 }
 
 footer .wrapper2 .contacto {
@@ -76,9 +77,18 @@ footer .wrapper2 > section {
 	color: #8c8c8c;
 }
 
-footer .wrapper2 .LogoZapato {
-	float: left;
+footer .wrapper2 .LogoZapato img {
+	margin-left: auto;
 }
+
+footer .wrapper2 .ubicacion iframe {
+	margin-top: 20px;
+}
+
+footer .wrapper2 .Social a {
+	text-align: center;
+}
+
 
 @media screen and (max-width: 950px) {
 	header .menu {
