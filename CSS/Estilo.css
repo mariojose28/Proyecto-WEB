@@ -1,15 +1,37 @@
 *{margin: 0; padding: o;}
 
+.fondo {
+	width: 100%; /* en porcentaje (el highlight del foro lo trasforma) */
+    height: 100%;
+    top:0;
+    left:0;
+    position:fixed;
+    z-index: -1;
+    margin-top: 10%;
+}
+
 header div .logo {
-	width: 200px;
-	height: 200px;
+	width: 180px;
+	height:150px;
+	background-color: #AFD7D9;
+	opacity: 0.5;
+	border-radius: 50%;
+	margin-top: 10px;
 }
 
 header {
 	width: 100%;
 	overflow: hidden;
-	background: #E6E6FA;
-	margin-bottom: 20px;
+	background-image: url(https://www.smashingmagazine.com/images/header-contest/full/Woman-Confident-Fear.jpg);
+	clear: both;
+	box-shadow: 2px 2px 2px #000;
+		-moz-box-shadow: 2px 2px 2px #000;
+		-webkit-box-shadow: 2px 2px 2px #000;
+	border-radius: 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		position: fixed;
+		height: 25%
 }
 
 .wrapper {
@@ -37,7 +59,7 @@ header .menu {
 
 header .menu a {
 	display: inline-block;
-	color: #6759BD;
+	color: white;
 	text-decoration: none;
 	padding: 10px 20px;
 	line-height: normal;
@@ -52,6 +74,22 @@ header .menu a {
 header .menu a:hover {
 	background: #f56f3a;
 	border-radius: 30px;
+}
+
+footer {
+	width: 100%;
+	background-image: url(C:/Users/Equipo/Documents/GitHub/Proyecto-WEB/Imagenes/footer.jpg);
+	float: left;
+	clear: both;
+	box-shadow: 2px 2px 2px #000;
+		-moz-box-shadow: 2px 2px 2px #000;
+		-webkit-box-shadow: 2px 2px 2px #000;
+	border-radius: 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+
+	opacity: 0.8;
+	margin-top: 48%;
 }
 
 footer section {
@@ -74,7 +112,7 @@ footer .wrapper2 > section {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Kaushan Script', cursive;
-	color: #8c8c8c;
+	color: #fff;
 }
 
 footer .wrapper2 .LogoZapato img {
