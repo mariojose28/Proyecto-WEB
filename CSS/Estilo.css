@@ -78,7 +78,7 @@ header .menu a:hover {
 
 footer {
 	width: 100%;
-	background-image: url(https://github.com/mariojose28/Proyecto-WEB/blob/master/Imagenes/footer.jpg);
+	background-image: url(../Imagenes/footer.jpg);
 	float: left;
 	clear: both;
 	box-shadow: 2px 2px 2px #000;
@@ -97,6 +97,10 @@ footer section {
 	float: left;
 	padding: 0%;
 	margin: auto;
+}
+
+footer .contacto p:hover {
+	opacity: 
 }
 
 footer .wrapper2 .contacto {
