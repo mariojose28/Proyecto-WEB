@@ -78,7 +78,7 @@ header .menu a:hover {
 
 footer {
 	width: 100%;
-	background-image: url(../Imagenes/footer.jpg);
+	background-image: url(https://github.com/mariojose28/Proyecto-WEB/blob/master/Imagenes/footer.jpg);
 	float: left;
 	clear: both;
 	box-shadow: 2px 2px 2px #000;
@@ -131,6 +131,15 @@ footer .wrapper2 .Social a {
 	text-align: center;
 }
 
+footer .wrapper2 > section:hover {
+	background: #f56f3a;
+	transform: scale(1.1);
+	border-radius: 20%;
+	text-align: center;
+	height: 130px;
+	width: 200px;
+	margin-top: 10px;
+}
 
 @media screen and (max-width: 950px) {
 	header .menu {
