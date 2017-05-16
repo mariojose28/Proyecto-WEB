@@ -133,12 +133,16 @@ footer .wrapper2 .Social a {
 
 footer .wrapper2 > section:hover {
 	background: #f56f3a;
-	transform: scale(1.1);
+	transform: scale(1.0);
 	border-radius: 20%;
 	text-align: center;
-	height: 130px;
-	width: 200px;
-	margin-top: 10px;
+	height: 200px;
+	width: 220px;
+	margin-top: 5px;
+}
+
+footer .wrapper2 .LogoZapato:hover {
+	margin-bottom: 20px;
 }
 
 @media screen and (max-width: 950px) {
