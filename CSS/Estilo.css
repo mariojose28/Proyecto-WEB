@@ -8,6 +8,53 @@
     position:fixed;
 }
 
+body > .contenedor {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+}
+
+body .contenedor > div {
+	float: left;
+	margin: auto;
+}
+
+body .contenedor .izquierda {
+	/*background-color: #E62D4F;*/
+	width: 25%
+}
+
+body .contenedor .centro {
+	background-color: #3BEAF1;
+	width: 50%;
+}
+
+body .contenedor .derecha {
+	/*background-color: #E62D4F;*/
+	width: 25%;
+}
+
+body .contenedor .derecha a img {
+	float: right;
+		box-shadow: 2px 2px 2px 2px #000;
+		-moz-box-shadow:2px 2px 2px 2px #000;
+		-webkit-box-shadow:2px 2px 2px 2px #000;
+	margin: 0 50px 0 0;
+}
+
+body .contenedor .izquierda a img {
+		box-shadow: 2px 2px 2px 2px #000;
+		-moz-box-shadow:2px 2px 2px 2px #000;
+		-webkit-box-shadow:2px 2px 2px 2px #000;
+	margin: 0 0 0 50px;
+}
+
+body .contenedor div img {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
 body .FondoZapato .logo {
 	width: 180px;
 	height:160px;
