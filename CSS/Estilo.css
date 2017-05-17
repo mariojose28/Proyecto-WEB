@@ -6,6 +6,7 @@
     top:0;
     left:0;
     position:fixed;
+    z-index: -1;
 }
 
 body > .contenedor {
@@ -43,10 +44,31 @@ body .contenedor .derecha a img {
 }
 
 body .contenedor .izquierda a img {
-		box-shadow: 2px 2px 2px 2px #000;
-		-moz-box-shadow:2px 2px 2px 2px #000;
-		-webkit-box-shadow:2px 2px 2px 2px #000;
+	box-shadow: 2px 2px 2px 2px #000;
+	-moz-box-shadow:2px 2px 2px 2px #000;
+	-webkit-box-shadow:2px 2px 2px 2px #000;
 	margin: 0 0 0 50px;
+	transform: translate(0px);
+  	-moz-transform: translate(0px);
+  	-webkit-transform: translate(0px);
+  	transition: all 500ms ease-in-out;
+  	-moz-transition: all 500ms ease-in-out;
+  	-webkit-transition: all 500ms ease-in-out;
+}
+
+body .contenedor .izquierda a:hover img {
+		transform:translate(-70px,0px);
+    -ms-transform:translate(-70px,0px); // IE 9 
+    -moz-transform:translate(-70px,0px); // Firefox 
+    -webkit-transform:translate(-70px,0px); // Safari and Chrome 
+    -o-transform:translate(-70px,0px); // Opera  
+}
+
+body .contenedor .izquierda h3 {
+	line-height: 200px;
+	position: absolute;
+	z-index: -1;
+	left: 101px;
 }
 
 body .contenedor div img {
