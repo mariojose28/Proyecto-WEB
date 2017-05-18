@@ -125,6 +125,9 @@ body .FondoZapato .enlacelogo .logo {
 		-moz-box-shadow: 2px 2px 2px #000;
 		-webkit-box-shadow: 2px 2px 2px #000;
 	background-image:-webkit-linear-gradient(#000000, #77BCE6);
+	-webkit-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
 }
 
 body .FondoZapato .enlacelogo:hover .logo {
@@ -207,6 +210,10 @@ header .menu a:hover {
 	/*background: #f56f3a;*/
 	background-image:-webkit-linear-gradient(#77BCE6, #000000);
 	border-radius: 30px;
+	transform: scale(1.2);
+	-webkit-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
 }
 
 footer {
@@ -216,11 +223,11 @@ footer {
 	float: left;
 	clear: both;
 	box-shadow: 2px 2px 2px #000;
-		-moz-box-shadow: 2px 2px 2px #000;
-		-webkit-box-shadow: 2px 2px 2px #000;
+	-moz-box-shadow: 2px 2px 2px #000;
+	-webkit-box-shadow: 2px 2px 2px #000;
 	border-radius: 15px;
-		-moz-border-radius: 15px;
-		-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
 
 	opacity: 0.8;
 	margin-top: 50%;
