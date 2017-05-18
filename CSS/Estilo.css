@@ -1,4 +1,4 @@
-*{margin: 0; padding: o;}
+*{margin: 0; padding: 0;}
 
 .fondo {
 	width: 100%; /* en porcentaje (el highlight del foro lo trasforma) */
@@ -37,17 +37,29 @@ body .contenedor .derecha {
 
 body .contenedor .derecha a img {
 	float: right;
-		box-shadow: 2px 2px 2px 2px #000;
+	box-shadow: 2px 2px 2px 2px #000;
 		-moz-box-shadow:2px 2px 2px 2px #000;
 		-webkit-box-shadow:2px 2px 2px 2px #000;
-	margin: 0 50px 0 0;
+	margin: 0 60px 0 0;
+	transform: translate(0px);
+  		-moz-transform: translate(0px);
+  		-webkit-transform: translate(0px);
+  	transition: all 500ms ease-in-out;
+  		-moz-transition: all 500ms ease-in-out;
+  		-webkit-transition: all 500ms ease-in-out;
+}
+
+body .contenedor .derecha a:hover img {
+	transform:translate(60px,0px);
+    	-moz-transform:translate(60px,0px); 
+    	-webkit-transform:translate(60px,0px);
 }
 
 body .contenedor .izquierda a img {
 	box-shadow: 2px 2px 2px 2px #000;
 	-moz-box-shadow:2px 2px 2px 2px #000;
 	-webkit-box-shadow:2px 2px 2px 2px #000;
-	margin: 0 0 0 50px;
+	margin: 0 0 0 60px;
 	transform: translate(0px);
   	-moz-transform: translate(0px);
   	-webkit-transform: translate(0px);
@@ -57,18 +69,26 @@ body .contenedor .izquierda a img {
 }
 
 body .contenedor .izquierda a:hover img {
-		transform:translate(-70px,0px);
-    -ms-transform:translate(-70px,0px); // IE 9 
-    -moz-transform:translate(-70px,0px); // Firefox 
-    -webkit-transform:translate(-70px,0px); // Safari and Chrome 
-    -o-transform:translate(-70px,0px); // Opera  
+	transform:translate(-50px,0px);
+    	-moz-transform:translate(-60px,0px); 
+    	-webkit-transform:translate(-60px,0px);
+    	-o-transform:translate(-60px,0px); 
 }
 
 body .contenedor .izquierda h3 {
 	line-height: 200px;
 	position: absolute;
+	/*z-index: -1;*/
+	left: 130px;
+	font-size: 20px;
+}
+
+body .contenedor .derecha h3 {
+	line-height: 200px;
+	position: absolute;
+	right: 130px;
+	font-size: 20px;
 	z-index: -1;
-	left: 101px;
 }
 
 body .contenedor div img {
