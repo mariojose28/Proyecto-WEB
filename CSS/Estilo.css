@@ -136,6 +136,10 @@ body .contenedor div img {
 	float: left;
 }
 
+body .fb-comments {
+	right: 800px;
+}
+
 body .FondoZapato .enlacelogo .logo {
 	width: 180px;
 	height:147px;
