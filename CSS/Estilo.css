@@ -16,6 +16,30 @@ body > .contenedor {
 	z-index: -1;
 }
 
+body .sFacebook a img {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	border-radius: 50%;
+	background-color: blue;
+	padding: 0px;
+	margin-top: 10%;
+	z-index: 1;
+	margin-left: 212px;
+	box-shadow: 2px 2px 2px #000;
+		-moz-box-shadow: 2px 2px 2px #000;
+		-webkit-box-shadow: 2px 2px 2px #000;
+	background-image:-webkit-linear-gradient(#77BCE6, #000000);
+	-webkit-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
+}
+
+body .sFacebook a:hover img {
+	transform: scale(1.2);
+	opacity: 1;
+}
+
 body .contenedor > div {
 	float: left;
 	margin: auto;
@@ -124,7 +148,7 @@ body .FondoZapato .enlacelogo .logo {
 	box-shadow: 2px 2px 2px #000;
 		-moz-box-shadow: 2px 2px 2px #000;
 		-webkit-box-shadow: 2px 2px 2px #000;
-	background-image:-webkit-linear-gradient(#000000, #77BCE6);
+	background-image:-webkit-linear-gradient(#77BCE6, #000000);
 	-webkit-transition: all 800ms ease;
 	-o-transition: all 800ms ease;
 	transition: all 800ms ease;
@@ -135,6 +159,10 @@ body .FondoZapato .enlacelogo:hover .logo {
 	transform: scale(1.2);
 	opacity: 1;
 
+}
+
+ody .contenedor .fb-comments {
+	z-index: 1;
 }
 
 body header .wrapper h3 {
@@ -186,21 +214,20 @@ header .logo {
 
 header .menu {
 	float: right;
-	line-height: 200px;
+	line-height: 205px;
 }
 
 header .menu a {
 	display: inline-block;
 	color: white;
 	text-decoration: none;
-	padding: 10px 20px;
-	line-height: normal;
+	padding: 10px 20px; /*10px heigh y top, 20px lrft y right*/
+	line-height: normal; /*Interlineado*/
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
 	font-family: 'Josefin Slab', serif;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-family: 'Great Vibes', cursive;
-	-weight: bold;
 	-webkit-transition: all 800ms ease;
 	-o-transition: all 800ms ease;
 	transition: all 800ms ease;
