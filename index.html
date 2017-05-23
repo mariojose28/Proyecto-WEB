@@ -7,18 +7,26 @@
 	<link rel="shorcut icon" href="Logos&Iconos/LogoZapato.png" type="image/x-icon">
 	<link rel="stylesheet" href="CSS/Estilo.css" type="">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Slab|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<ul class="Redes-Sociales">
+		
+		<li><a href="https://www.facebook.com/losgranadinos2017/"><img src="Logos&Iconos/facebook.png" alt=""></a></li>
+
+		<li><a href="#"><img src="Logos&Iconos/Twitter.png" alt=""></a></li>
+
+		<li><a href="#"><img src="Logos&Iconos/Google+.png" alt=""></a></li>
+
+		<li><a href="#"><img src="Logos&Iconos/Whatsapp.png" alt=""></a></li>
+
+	</ul>
+
+<img src="Imagenes/fondo1.jpg" alt="" class="fondo">
+
+<header>
 
 	<div class="FondoZapato">
 
@@ -26,23 +34,13 @@
 
 	</div>
 
-	<div class="sFacebook">
-		
-		<a href="#"><img src="Logos&Iconos/facebook.png" alt=""></a>
-
-	</div>
-
-<img src="Imagenes/fondo1.jpg" alt="" class="fondo">
-
-<header>
-
 <div class="wrapper">
 
 <h3>"Lo mejor en zapatos con los mejores precios"</h3>
 
 	<nav class="menu">
 		
-		<a href="https://mariojose28.github.io/Proyecto-WEB/">Inicio</a>
+		<a href="index.html">Inicio</a>
 		<a href="#">¿Quiénes somos?</a>
 		<a href="#">Ubicación</a>
 		<a href="#">Contacto</a>
@@ -54,32 +52,71 @@
 </header>
 
 <div class="contenedor">
+
+<script>
+
+var slideIndex = 1;
+
+showDivs(slideIndex);
+
+function plusDivs(n) {
+	showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("myslides");
+
+	if (n > x.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+
+			x[slideIndex-1].style.display = "block";
+}
+
+</script>
 	
 	<div class="izquierda">
 
-	<a href="#"><img src="Logos&Iconos/Dir-Izquierda.png" alt=""></a>
+	<a href="#" onclick="plusDivs(-1)"><img src="Logos&Iconos/Dir-Izquierda.png" alt=""></a>
 
 		<h3>Prev...</h3>
 		
 	</div>
 
 	<div class="centro">
+		<a href="#"><img src="Imagenes/tienda1.jpg" alt="" class="myslides"></a>
+		<a href="#"><img src="Imagenes/tienda2.jpg" alt="" class="myslides"></a>
+		<a href="#"><img src="Imagenes/tienda3.jpg" alt="" class="myslides"></a>
+		<a href="#"><img src="Imagenes/tienda4.jpg" alt="" class="myslides"></a>
 
-	<h3>Centro</h3>
-		
 	</div>
 
 	<div class="derecha">
 
-	<a href="#"><img src="Logos&Iconos/Dir-Derecha.png" alt=""></a>
+	<a href="#" onclick="plusDivs(+1)"><img src="Logos&Iconos/Dir-Derecha.png" alt=""></a>
 
 	<h3>Next</h3>
 		
 	</div>
 
 </div>
+	
+	<div class="contenedor2">
 
-<div class="fb-comments" data-href="https://mariojose28.github.io/Proyecto-WEB/" data-width="200" data-numposts="5"></div>
+	<center>
+		
+		<hr>
+
+		<h3><a href="#">Lo nuevo</a></h3>
+
+	</center>
+
+
+	</div>
+
 
 <footer>
 
