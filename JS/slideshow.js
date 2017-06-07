@@ -1,4 +1,4 @@
-	<script>
+<script>
 
 var slideIndex = 1;
 

@@ -1,0 +1,115 @@
+div {
+    position: relative;
+    border: 1px Solid aqua;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: auto;
+}
+
+h1 {
+    color: chartreuse;
+    text-align: center;
+    
+}
+
+.Form ul{
+    list-style: none;
+    width: 750px;
+    margin: 0;
+    padding: 0;
+}
+
+.Form li {
+    padding: 12px;
+    position: relative;
+}
+
+.Form label {
+    float: left;
+    display: inline-block;
+    margin-top: 3px;
+    padding: 3px;
+    width: 150px;
+}
+
+.Form input {
+    height: auto;
+    padding: 5px 8px;
+    width: auto;
+}
+
+.Form button {
+    margin-left: 156px;
+}
+
+.Form input {
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #ccc inset;
+    border-radius: 3px;
+    padding-right: 30px;
+    transition:padding .25s;
+}
+
+.Form input:required {
+    border-bottom-color: crimson;
+}
+
+.Form input:required:valid {
+    background-color: chartreuse;
+    border-bottom-color: chartreuse;
+}
+
+.Form input:focus:invalid {
+    background: #fff;
+    border-color: blueviolet;
+}
+
+.helpme {
+    background: #d45252;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 8px;
+    padding: 1px 8px;
+    z-index: 999;
+    position: absolute;
+    display: none;
+}
+
+.helpme::before {
+    content: "\25C0";
+    color: #d42555;
+    position: absolute;
+    top: 1px;
+    left: -1px;
+}
+
+.Form input:focus + .helpme {
+    display: inline;
+}
+
+.Form input:required:valid + .helpme::before{
+    color: #28921f;
+}
+
+button.Submit {
+    background: #68b12f;
+    border: 1px solid #509111;
+    border-radius: 5px;
+    box-shadow:inset 0 1px 0 0 #9fd574;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396315;
+}
+
+button.Submit:hover {
+    opacity: .85;
+    cursor: pointer;
+}
+
+button.Submit:active {
+    border: 1px solid #20911a;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    
+}

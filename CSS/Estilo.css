@@ -1,10 +1,8 @@
 body {margin: 0; padding: 0;}
 
 .fondo {
-	width: 100%; /* en porcentaje (el highlight del foro lo trasforma) */
+	width: 100%;
     height: 100%;
-    top:0;
-    left:0;
     position:fixed;
     z-index: -1;
 }
@@ -13,17 +11,42 @@ header {
 	width: 100%;
 	box-shadow: 2px 2px 2px #000;
 	border-radius: 10px;
-	background-image:-webkit-linear-gradient(#000000,#77BCE6);
+	background-image:linear-gradient(#000000,#77BCE6);
 	position: fixed;
-	top: 0%;
     height: 25%;
     overflow: hidden;
 }
 
+.LogoSuperior {
+    width: 15%;
+    margin-right: auto;
+}
+
+.logo {
+    position: relative;
+	width: 140px;
+	height:130px;
+    margin-left: 15%;
+    margin-right: auto;
+    float: left;
+	opacity: 0.7;
+	border-radius: 100px;
+	top: 16px;
+	box-shadow: 2px 2px 2px #000;
+	background-image:linear-gradient(#77BCE6, #000000);
+	transition: all 800ms ease;
+    z-index: 1;
+}
+
+.enlacelogo:hover .logo {
+	transform: scale(1.3);
+	opacity: 1;
+}
+
 .Redes-Sociales {
 	position: fixed;
-    left: 20%;
-    top: 18%;
+    margin-top: 10%;
+    margin-left: 20%;
     z-index: 1;
 }
 
@@ -32,11 +55,7 @@ header {
 	height: 50px;
 	border-radius: 50%;
 	box-shadow: 2px 2px 2px #000;
-	-moz-box-shadow: 2px 2px 2px #000;
-	-webkit-box-shadow: 2px 2px 2px #000;
-	background-image:-webkit-linear-gradient(#77BCE6, #000000);
-	-webkit-transition: all 800ms ease;
-	-o-transition: all 800ms ease;
+	background-image:linear-gradient(#77BCE6, #000000);
 	transition: all 800ms ease;
 	margin-left: -7px;
 }
@@ -52,44 +71,32 @@ header {
 }
 
 .wrapper-header {
+    position: absolute;
 	width: 90%;
-	max-width: 1000px;
-	margin: auto;
-	overflow: hidden;
+	left: 5%;
     height: 100%;
 }
 
-.wrapper-header h4 {
-    font-size: 40px;
-	position: relative;
-    top: 0%;
+.wrapper-header h4{
+    text-align: center;
+    margin-top: 0%;
+    font-size: 35px;
+    text-decoration: underline;
 	color: #F9F4F5;
     font-family: 'Kaushan Script', cursive;
     font-family: 'Niconne', cursive;
 }
 
-.wrapper-header h3 {
-	font-size: 36px;
-    top: 30%;
-	position: absolute;
-	font-family: 'Raleway', sans-serif;
-	font-family: 'Josefin Slab', serif;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-family: 'Great Vibes', cursive;
-	color: #F9F4F5;
-}
-
 .menu {
-    position: absolute;
-    width: 30%;
-    left: 60%;
-    top: 50%;
+    position: relative;
+    width: 40%;
+    margin-left: auto;
 }
 
 .menu a {
 	color: #F9F4F5;
 	text-decoration: none;
-	padding: 5px 10px; /*10px heigh y top, 20px lrft y right*/
+	padding: 5px 10px; /*10px heigh y top, 20px left y right*/
 	font-size: 22px;
 	font-family: 'Raleway', sans-serif;
 	font-family: 'Josefin Slab', serif;
@@ -98,103 +105,95 @@ header {
 }
 
 .menu a:hover {
-	background-image:-webkit-linear-gradient(#77BCE6, #000000);
+	background-image:linear-gradient(#77BCE6, #000000);
 	border-radius: 30px;
     transition: all 800ms ease;
 }
 
-.Primera{
+.Container{
     position: absolute;
-    top: 30%;
+    margin-top: 15%;
     width: 100%;
-    height: 450px;
-    overflow: hidden;
-    max-width: 1348px;
+    z-index: 1;
 }
 
-.izquierda {
+.Izquierda {
     position: relative;
 	width: 25%;
-    height: 100%;
     float: left;
 }
 
-.izquierda img {
-	margin-left: 60px;
+.Izquierda img {
+    position: relative;
+	margin-left: 20%;
   	transition: all 500ms ease-in-out;
   	opacity: 0.3;
-    position: relative;
     width: 100%;
-    height: 100%;
-    float: left;
+    height: 450px;
 }
 
-.izquierda a:hover img {
+.Izquierda a:hover img {
 	transform:translate(-50px,0px);
     opacity: 1;
 }
 
-.derecha {
+.Derecha {
     position: absolute;
 	width: 25%;
-    height: 100%;
-    left: 75%;
+    margin-left:75%;
 }
 
-.derecha a img {
+.Derecha a img {
 	position: relative;
     width: 100%;
-    height: 100%;
+    height: 450px;
   	transition: all 500ms ease-in-out;
   	opacity: 0.3;
-    margin-left: -15%;
+    margin-left: -20%;
 }
 
-.derecha a:hover img {
-	transform:translate(60px,0px);
+.Derecha a:hover img {
+	transform:translate(50px,0px);
     opacity: 1;
 }
 
-.centro {
+.Centro {
     position: relative;
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     float: left;
-    overflow: hidden;
+}
+
+.SlideShow {
+    position: relative;
+    width: 100%;
+    height: 450px;
 }
 
 .myslides {
-    top: -40px;
-    width: 450px;
-    height: 530px;
-    margin-left: 17%;
-    transform: rotate(90deg);
     position: absolute;
+    width: 60%;
+    height: 450px;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+    transform: rotate(90deg);
 	border-radius: 50px;
 	box-shadow: 2px 2px 2px #000;
 }
 
-.LogoSuperior {
-    width: 15%;
-}
-
-.logo {
-	width: 140px;
-	height:130px;
-    left: 15%;
-    float: left;
-	opacity: 0.7;
-	border-radius: 100px;
-	top: 16px;
-	position: relative;
-	box-shadow: 2px 2px 2px #000;
-	background-image:linear-gradient(#77BCE6, #000000);
-	transition: all 800ms ease;
-}
-
-.enlacelogo:hover .logo {
-	transform: scale(1.3);
-	opacity: 1;
+.SlideShow h2 {
+    position: absolute;
+    text-align: center;
+    color: aqua;
+    background-color: black;
+    opacity: 0.5;
+    width: 40%;
+    margin-top: 300px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 footer {
