@@ -70,14 +70,14 @@ header {
 	opacity: 1;
 }
 
-.wrapper-header {
+.Wrapper-Header {
     position: absolute;
 	width: 90%;
 	left: 5%;
     height: 100%;
 }
 
-.wrapper-header h4{
+.Wrapper-Header h4{
     text-align: center;
     margin-top: 0%;
     font-size: 35px;
