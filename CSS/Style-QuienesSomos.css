@@ -11,6 +11,19 @@ body {padding: 0; margin: o;}
     height: 100%;
 }
 
+.divMp {
+    position: absolute;
+    width: 50%;
+}
+.mp {
+    float: left;
+}
+.info {
+    position: relative;
+    width: 40%;
+}
+
+
 .imageTienda img {
     position: relative;
     width: 650px;

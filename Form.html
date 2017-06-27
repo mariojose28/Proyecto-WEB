@@ -13,22 +13,37 @@
       
         <h1>Regístrate y ¡Gana un par de zapato!</h1><br><hr>
   
-        <p>Instrucciones: LLena los datos y da click en el botón Registrar y si eres el usuario número 300 te enviaremos un Correo con las indicaciones para retirar tu premios</p><hr>
+        <p>LLena los datos y da click en el botón Registrar, automáticamente se te enviará un correo con las indicaciones.</p><hr>
        
-       <form action="" class="Form">
+       <form action="php/guardar.php" class="Form" method="post">
            
            <ul>
                
-               <li><label for="Name">Nombres:</label><input type="text" placeholder="Ingrese su nombre" required></li>
-               <li><label for="LastName">Apellidos:</label><input type="text" placeholder="Ingrese sus apellidos" required></li>
-               <li><label for="Age">Edad:</label><input type="number" placeholder="Ingrese su edad" required></li>
-               <li><label for="Email">Email:</label><input type="email" placeholder="Ingrese su email" required><span class="helpme">Formato adecuado: usuario@gmail.com</span></li>
-               <li><label for="Cellphone">Celular:</label><input type="tel" placeholder="Ingrese su numero de celular" required><span class="helpme">Formato correcto: 1234-5678</span></li>
-               <li><label for="Sex">Sexo:</label><input type="radio" class="gender" value="Male">Masculino
-               <input type="radio" class="gender" value="Female">Femenino
-               <input type="radio" class="gender" value="Other">Otro</li>
-               <li><button class="submit" type="submit">Registrar</button>
-               <a href="javascript:window.close()"><button class="Cancelar" type="button"  tittle= "Ir Pag. Principal">Cancelar</button></li></a>
+               <li><label for="Name">Nombres:</label><input type="text" placeholder="Ingrese su nombre" name="nombre" required></li>
+               
+               <li><label for="LastName">Apellidos:</label><input type="text" placeholder="Ingrese sus apellidos" name="apellido" required></li>
+               
+               <li><label for="Age">Edad:</label><input type="number" placeholder="Edad" min="15" max="99" name="edad" required></li>
+               
+               <li><label for="Sex">Sexo:</label>
+               <input type="radio" name="gender" value="Male"/>Masculino 
+               <input type="radio" name="gender" value="Female"/>Femenino
+               <input type="radio" name="gender" value="Other"/>Otro</li>
+               
+                <li><label for="Cellphone">Celular:</label><input type="tel" placeholder="Ingrese su # de celular" name="tel" pattern="[0-9]{8}" required><span class="helpme">Formato correcto: 1234-5678</span></li>
+               
+               <li><label for="Email">Email:</label><input type="email" placeholder="Ingrese su email" name="email" required><span class="helpme">Formato adecuado: usuario@gmail.com</span></li>
+               
+               <li><label for="Usuario">Usuario:</label><input type="text" placeholder="Nombre de Usuario" name="usuario" required><span class="helpme">Ejemplo: mario278</span></li>
+               
+               <li><label for="contraseña">Contraseña:</label><input type="password" placeholder="Ingrese su contraseña" name="contra" required></li>
+               
+               <li><label for="confirmar">Confirmar Contraseña:</label><input type="password" name="confirmar" placeholder="Escriba su contraseña" required></li>
+               
+               
+               <li><button name="submit" type="submit">Registrar</button></li>
+               
+               <li><a href="index.html"><button class="Cancelar" type="button"  tittle= "Ir Pag. Principal">Cancelar</button></a></li>
                
            </ul>
            

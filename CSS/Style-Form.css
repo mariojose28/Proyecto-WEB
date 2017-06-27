@@ -1,12 +1,12 @@
 body {padding: 0; margin: 0;}
 
 div {
-    position: absolute;
+    position: relative;
     border: 1px Solid aqua;
-    width: 50%;
-    top: 5%;
-    left: 25%;
-    right: 25%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
 }
 
 .fondo {
@@ -20,13 +20,13 @@ div {
 h1 {
     color: chartreuse;
     text-align: center;
-    
+    font-size: 18px;
 }
 
 p {
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-style: oblique;
     background-color: black;
     opacity: 0.7;
@@ -40,7 +40,7 @@ p {
 }
 
 .Form li {
-    padding: 12px;
+    padding: 10px;
     position: relative;
 }
 
@@ -59,7 +59,8 @@ p {
 }
 
 .Form button {
-    margin-left: 156px;
+    position: relative;
+    margin-left: 200px;
 }
 
 .Form input {
@@ -87,7 +88,7 @@ p {
     background: #d45252;
     border-radius: 5px;
     color: #fff;
-    margin-left: 8px;
+    margin-left: 10px;
     padding: 1px 8px;
     z-index: 999;
     position: absolute;
@@ -96,10 +97,10 @@ p {
 
 .helpme::before {
     content: "\25C0";
-    color: #d42555;
+    color: #d45252;
     position: absolute;
-    top: 1px;
-    left: -1px;
+    top: 0;
+    left: -10.5px;
 }
 
 .Form input:focus + .helpme {

@@ -8,20 +8,10 @@
 	<link rel="stylesheet" href="CSS/Estilo.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Slab|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Niconne" rel="stylesheet">
-    <SCRIPT LANGUAGE="JavaScript">
-<!-- Begin
-function popUp(URL) {
-day = new Date();
-id = day.getTime();
-eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=1,scrollbars=1,location=1,statusbar=1,menubar=1,resizable=1,width=600,height=600,left = 383,top = 84');");
-}
-// End -->
-</script>
+    
 </head>
     
 <body>
-  
-  <BODY onLoad="javascript:popUp('Form.html')">
    
     <img src="Imagenes/fz.jpg" alt="" class="fondo">
     
@@ -29,11 +19,11 @@ eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=1,scrollbars=1,lo
         
         <ul class="Redes-Sociales">
 		
-		<li><a href="https://www.facebook.com/losgranadinos2017/"><img src="Logos&Iconos/facebook.png" alt=""></a></li>
+		<li><a target="_blank" href="https://www.facebook.com/losgranadinos2017/"><img src="Logos&Iconos/facebook.png" alt=""></a></li>
 
-		<li><a href="#"><img src="Logos&Iconos/Twitter.png" alt=""></a></li>
+		<li><a target="_blank" href="https://twitter.com/tiendagranadino"><img src="Logos&Iconos/Twitter.png" alt=""></a></li>
 
-		<li><a href="#"><img src="Logos&Iconos/Google+.png" alt=""></a></li>
+		<li><a target="_blank" href="https://plus.google.com/collection/kKgtCE"><img src="Logos&Iconos/Google+.png" alt=""></a></li>
 
 		<li><a href="#"><img src="Logos&Iconos/Whatsapp.png" alt=""></a></li>
 
@@ -41,19 +31,38 @@ eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=1,scrollbars=1,lo
 
         <div class="Logo-Superior">
 
-	        <a href="index.html" class="enlacelogo"><img src="Logos&Iconos/LogoZapato.png" alt="" class="logo"></a>	
+	        <a href="index.php" class="enlacelogo"><img src="Logos&Iconos/LogoZapato.png" alt="" class="logo"></a>	
 
 	</div>
 
         <div class="Wrapper-Header">
+        
+            <h5><?php
+
+	session_start();
+
+	 if (!isset($_SESSION["usuario"])) {
+	 	
+	 	//Redirige a la pagina de login
+	 	echo '<a href="Form.html">Regístrate</a> o <a href="login.html">Inicia sesión</a>';
+	 }else{
+         
+         echo 'Bienvenido Usuario '
+.$_SESSION["usuario"];
+         
+         echo '<a href="">Cierra Session</a>';
+         
+     }
+                
+                ?></h5>
     
             <h4>"Tienda de zapatos usados Los Granadinos"</h4>
             
 	<nav class="menu">
 		
-		<a href="index.html">Inicio</a>
-		<a href="QuienesSomos.html">¿Quiénes somos?</a>
-		<a href="#">Ubicación</a>
+		<a href="index.php">Inicio</a>
+		<a href="QuienesSomos.php">¿Quiénes somos?</a>
+		<a href="ubicacion.php">Ubicación</a>
 		<a href="#">Contacto</a>
 
 	</nav>

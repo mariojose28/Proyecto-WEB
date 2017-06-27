@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/Style-Form.css" type="text/css">
+</head>
+<body>
+  
+  <img src="Imagenes/fz.jpg" alt="" class="fondo">
+   
+   <div>
+      
+        <h1>¡Gracias por formar partes de nosotros!</h1><br><hr>
+  
+        <p>Si no te has registrado... <a href="Form.html">Ingresa aqui</a></p><hr>
+       
+       <form action="InicioSesion.php" class="Form" method="post">
+           
+           <ul>
+               
+               <li><label for="Usuario">Usuario:</label><input type="text" placeholder="Nombre de Usuario" name="usuario" required><span class="helpme">Respeta las mayusculas y muinusculas</span></li>
+               
+               <li><label for="contraseña">Contraseña:</label><input type="password" placeholder="Ingrese su contraseña" name="contra" required></li>
+               
+               
+               <li><button name="submit" type="submit">Iniciar</button></li>
+               
+               <li><a href="index.html"><button class="Cancelar" type="button"  tittle= "Ir Pag. Principal">Cancelar</button></a></li>
+               
+           </ul>
+           
+       </form>
+       
+   </div>
+    
+</body>
+</html>
